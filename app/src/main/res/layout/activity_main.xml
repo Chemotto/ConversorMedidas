@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Campo de entrada -->
+    <EditText
+        android:id="@+id/inputValue"
+        android:hint="Introduce valor"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!-- Selección de unidad origen -->
+    <Spinner
+        android:id="@+id/spinnerFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!-- Selección de unidad destino -->
+    <Spinner
+        android:id="@+id/spinnerTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!-- Botón de conversión -->
+    <Button
+        android:id="@+id/btnConvert"
+        android:text="Convertir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!-- Resultado -->
+    <TextView
+        android:id="@+id/txtResult"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
